@@ -8,7 +8,7 @@ export enum ButtonType {
   secondary = 'secondary',
 }
 
-interface Props extends TouchableOpacityProps {
+export interface Props extends TouchableOpacityProps {
   text: string;
   type?: ButtonType;
 }

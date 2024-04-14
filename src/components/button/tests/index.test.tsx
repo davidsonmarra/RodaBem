@@ -1,13 +1,13 @@
 import React from 'react';
 import {create} from 'react-test-renderer';
-import Button, {ButtonType} from '..';
+import Button, {ButtonType, Props as ButtonProps} from '..';
+import {TouchableOpacity} from 'react-native';
+import styles from '../styles';
+
+type Props = Partial<ButtonProps> & {type?: string};
 
 const mockText = 'Snapshot test!';
-const createComponent = ({
-  text = mockText,
-  type = ButtonType.primary,
-  ...rest
-}) =>
+const createComponent = ({text = mockText, type, ...rest}: Props) =>
   create(
     <Button text={text} type={type} {...rest}>
       {mockText}
@@ -33,12 +33,18 @@ describe('Button', () => {
   });
 
   it('renders primary style correctly', () => {
-    const instance = createComponent({}).root;
+    const instance = createComponent({type: ButtonType.primary}).root;
     expect(instance.props.type).toEqual(ButtonType.primary);
   });
 
   it('renders secondary style correctly', () => {
     const instance = createComponent({type: ButtonType.secondary}).root;
     expect(instance.props.type).toEqual(ButtonType.secondary);
+  });
+
+  it('renders primary style correctly when does not have prop type', () => {
+    const instance = createComponent({type: undefined}).root;
+    const touchable = instance.findByType(TouchableOpacity);
+    expect(touchable.props.style).toEqual([styles.container, styles.primary]);
   });
 });
