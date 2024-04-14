@@ -31,4 +31,14 @@ describe('Text', () => {
     const instance = createComponent(TextType.textBold).root;
     expect(instance.props.type).toEqual(TextType.textBold);
   });
+
+  it('renders buttonPrimary style correctly', () => {
+    const instance = createComponent(TextType.buttonPrimary).root;
+    expect(instance.props.type).toEqual(TextType.buttonPrimary);
+  });
+
+  it('renders buttonSecondary style correctly', () => {
+    const instance = createComponent(TextType.buttonSecondary).root;
+    expect(instance.props.type).toEqual(TextType.buttonSecondary);
+  });
 });

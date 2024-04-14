@@ -13,6 +13,20 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
+  buttonPrimary: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'white',
+    padding: 8,
+    borderRadius: 4,
+  },
+  buttonSecondary: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'red',
+    padding: 8,
+    borderRadius: 4,
+  },
 });
 
 export default styles;
