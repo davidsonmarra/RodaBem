@@ -28,6 +28,7 @@ export const Primary: StoryObj<typeof Button> = {};
 
 export const Secondary: StoryObj<typeof Button> = {
   args: {
+    text: 'Button Secondary',
     type: ButtonType.secondary,
   },
 };
