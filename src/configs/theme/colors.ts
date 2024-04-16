@@ -5,4 +5,5 @@ export default {
   text: '#222222',
   buttonText: '#FFFFFF',
   border: '#595959',
+  error: '#B00020',
 };

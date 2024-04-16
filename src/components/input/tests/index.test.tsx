@@ -1,7 +1,6 @@
 import React from 'react';
 import {create} from 'react-test-renderer';
-import Input from '..';
-import {TextInputProps} from 'react-native';
+import Input, {Props as InputProps} from '..';
 
 let mockValue = '';
 const mockOnChangeText = jest.fn((text: string) => {
@@ -12,7 +11,7 @@ const createComponent = ({
   value = '',
   onChangeText = mockOnChangeText,
   ...rest
-}: TextInputProps) =>
+}: InputProps) =>
   create(<Input value={value} onChangeText={onChangeText} {...rest} />);
 
 describe('Input', () => {
@@ -37,6 +36,12 @@ describe('Input', () => {
     const value = 'default value';
     const instance = createComponent({value}).root;
     expect(instance.props.value).toBe(value);
+  });
+
+  it('should render input with the correct value for label prop', () => {
+    const label = 'label';
+    const instance = createComponent({label}).root;
+    expect(instance.props.label).toBe(label);
   });
 
   it('should render input with the correct value for placeholder prop', () => {

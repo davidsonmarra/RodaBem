@@ -29,6 +29,16 @@ const styles = StyleSheet.create({
     color: colors.primary,
     padding: 8,
   },
+  label: {
+    fontSize: 14,
+    fontWeight: 'normal',
+    color: colors.text,
+  },
+  error: {
+    fontSize: 14,
+    fontWeight: 'normal',
+    color: colors.error,
+  },
 });
 
 export default styles;

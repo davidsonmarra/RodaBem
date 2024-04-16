@@ -32,12 +32,11 @@ exports[`Button renders correctly 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "red",
+      "backgroundColor": "#E30B0B",
       "borderRadius": 12,
       "justifyContent": "space-between",
       "opacity": 1,
-      "paddingHorizontal": 8,
-      "paddingVertical": 12,
+      "padding": 8,
       "width": "100%",
     }
   }
@@ -46,9 +45,8 @@ exports[`Button renders correctly 1`] = `
     style={
       [
         {
-          "borderRadius": 4,
-          "color": "white",
-          "fontSize": 16,
+          "color": "#FFFFFF",
+          "fontSize": 18,
           "fontWeight": "bold",
           "padding": 8,
         },

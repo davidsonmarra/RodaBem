@@ -41,4 +41,14 @@ describe('Text', () => {
     const instance = createComponent(TextType.buttonSecondary).root;
     expect(instance.props.type).toEqual(TextType.buttonSecondary);
   });
+
+  it('renders label style correctly', () => {
+    const instance = createComponent(TextType.label).root;
+    expect(instance.props.type).toEqual(TextType.label);
+  });
+
+  it('renders error style correctly', () => {
+    const instance = createComponent(TextType.error).root;
+    expect(instance.props.type).toEqual(TextType.error);
+  });
 });

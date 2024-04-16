@@ -46,3 +46,15 @@ export const TextBold: StoryObj<typeof Text> = {
     type: TextType.textBold,
   },
 };
+
+export const Label: StoryObj<typeof Text> = {
+  args: {
+    type: TextType.label,
+  },
+};
+
+export const Error: StoryObj<typeof Text> = {
+  args: {
+    type: TextType.error,
+  },
+};

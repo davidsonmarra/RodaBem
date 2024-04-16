@@ -8,6 +8,8 @@ const InputMeta: Meta<typeof Input> = {
   component: Input,
   args: {
     placeholder: 'Placeholder',
+    label: '',
+    error: '',
   },
   decorators: [
     Story => (
@@ -21,3 +23,15 @@ const InputMeta: Meta<typeof Input> = {
 export default InputMeta;
 
 export const Default: StoryObj<typeof Input> = {};
+
+export const WithLabel: StoryObj<typeof Input> = {
+  args: {
+    label: 'Label',
+  },
+};
+
+export const WithError: StoryObj<typeof Input> = {
+  args: {
+    error: 'Error message',
+  },
+};
