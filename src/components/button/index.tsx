@@ -24,9 +24,11 @@ const buttonProps = {
   },
 };
 
-const Button = ({text, type = ButtonType.primary}: Props) => {
+const Button = ({text, type = ButtonType.primary, ...rest}: Props) => {
   return (
-    <TouchableOpacity style={[styles.container, buttonProps[type].buttonStyle]}>
+    <TouchableOpacity
+      style={[styles.container, buttonProps[type].buttonStyle, rest.style]}
+      {...rest}>
       <Text type={buttonProps[type].textType}>{text}</Text>
     </TouchableOpacity>
   );

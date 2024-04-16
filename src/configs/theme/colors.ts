@@ -1,6 +1,8 @@
 export default {
-  primary: '#FF3333',
-  background: '#CCCCCC',
+  primary: '#E30B0B',
+  background: '#F1F1F1',
   title: '#121212',
   text: '#222222',
+  buttonText: '#FFFFFF',
+  border: '#595959',
 };

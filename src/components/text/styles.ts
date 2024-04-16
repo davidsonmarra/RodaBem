@@ -18,13 +18,13 @@ const styles = StyleSheet.create({
     color: colors.text,
   },
   buttonPrimary: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
-    color: 'white',
+    color: colors.buttonText,
     padding: 8,
   },
   buttonSecondary: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
     color: colors.primary,
     padding: 8,

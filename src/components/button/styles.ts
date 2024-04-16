@@ -5,8 +5,7 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 8,
-    paddingVertical: 12,
+    padding: 8,
     borderRadius: 12,
     width: '100%',
   },
