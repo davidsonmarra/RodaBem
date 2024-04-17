@@ -10,27 +10,6 @@ exports[`Input renders correctly 1`] = `
     }
   }
 >
-  <Text
-    style={
-      [
-        {
-          "color": "#222222",
-          "fontSize": 14,
-          "fontWeight": "normal",
-        },
-        {
-          "width": "100%",
-        },
-      ]
-    }
-  />
-  <View
-    style={
-      {
-        "height": 8,
-      }
-    }
-  />
   <View
     style={
       {
@@ -46,6 +25,7 @@ exports[`Input renders correctly 1`] = `
     }
   >
     <TextInput
+      onBlur={[Function]}
       onChangeText={[MockFunction]}
       style={
         {
