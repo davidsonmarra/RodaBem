@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, View, ViewProps} from 'react-native';
 
-const StorybookView = ({children}: ViewProps) => {
-  return <View style={styles.container}>{children}</View>;
+const StorybookView = ({children, style}: ViewProps) => {
+  return <View style={[styles.container, style]}>{children}</View>;
 };
 
 const styles = StyleSheet.create({
