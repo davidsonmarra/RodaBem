@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 import {colors} from '@theme';
 
-const getStyles = (error = '') =>
+const getStyles = ({error = '', isFocus = false}) =>
   StyleSheet.create({
     container: {
       width: '100%',
@@ -17,7 +17,11 @@ const getStyles = (error = '') =>
       borderRadius: 10,
       paddingHorizontal: 10,
       borderWidth: 1,
-      borderColor: error ? colors.error : colors.border,
+      borderColor: error
+        ? colors.error
+        : isFocus
+        ? colors.primary
+        : colors.border,
       flexDirection: 'row',
       alignItems: 'center',
     },

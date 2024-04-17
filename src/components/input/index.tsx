@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {TextInput, TextInputProps, View} from 'react-native';
 import {Control, Controller, useForm} from 'react-hook-form';
 import {ErrorSvg} from '../../assets';
@@ -22,6 +22,7 @@ const Input = ({
   clearError,
   ...rest
 }: Props) => {
+  const [isFocus, setIsFocus] = useState(false);
   const {control: formControl} = useForm({});
 
   if (control === undefined) {
@@ -29,11 +30,11 @@ const Input = ({
   }
 
   return (
-    <View style={getStyles().container}>
+    <View style={getStyles({}).container}>
       {label && (
         <>
           <Text
-            style={getStyles().label}
+            style={getStyles({isFocus}).label}
             type={TextType.label}
             testID="id-label-input-text">
             {label}
@@ -47,17 +48,25 @@ const Input = ({
           required: true,
         }}
         render={({field: {onChange, onBlur, value}}) => (
-          <View style={getStyles(error).inputContainer}>
+          <View style={getStyles({error, isFocus}).inputContainer}>
             <TextInput
-              style={getStyles().input}
-              onBlur={onBlur}
+              style={getStyles({}).input}
+              onBlur={() => {
+                setIsFocus(false);
+                onBlur();
+              }}
+              onFocus={() => {
+                setIsFocus(true);
+                clearError?.();
+              }}
               onChangeText={onChange}
-              onFocus={clearError}
               value={value}
               {...rest}
             />
             {error && (
-              <View style={getStyles().tailError} testID="id-error-input-text">
+              <View
+                style={getStyles({}).tailError}
+                testID="id-error-input-text">
                 <ErrorSvg width="20" height="20" fill={colors.buttonText} />
               </View>
             )}
@@ -68,7 +77,7 @@ const Input = ({
       {error && (
         <>
           <VerticalSpacer height={4} />
-          <Text style={getStyles().error} type={TextType.error}>
+          <Text style={getStyles({}).error} type={TextType.error}>
             {error}
           </Text>
         </>
