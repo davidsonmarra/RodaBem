@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   container: {
     width: '100%',
     paddingHorizontal: 12,
-    paddingVertical: 8,
+    paddingVertical: 16,
     flexDirection: 'row',
   },
   icon: {

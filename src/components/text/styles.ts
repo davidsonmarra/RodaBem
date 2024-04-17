@@ -39,6 +39,11 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     color: colors.error,
   },
+  header: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: colors.title,
+  },
 });
 
 export default styles;

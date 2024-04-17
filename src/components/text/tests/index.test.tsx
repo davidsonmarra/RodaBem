@@ -51,4 +51,9 @@ describe('Text', () => {
     const instance = createComponent(TextType.error).root;
     expect(instance.props.type).toEqual(TextType.error);
   });
+
+  it('renders header style correctly', () => {
+    const instance = createComponent(TextType.header).root;
+    expect(instance.props.type).toEqual(TextType.header);
+  });
 });

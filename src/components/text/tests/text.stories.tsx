@@ -58,3 +58,9 @@ export const Error: StoryObj<typeof Text> = {
     type: TextType.error,
   },
 };
+
+export const Header: StoryObj<typeof Text> = {
+  args: {
+    type: TextType.header,
+  },
+};

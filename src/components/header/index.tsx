@@ -13,7 +13,7 @@ export interface Props {
 
 const Header = ({text, onBack, showLeftIcon = true}: Props) => {
   const {goBack} = useNavigation();
-  if (onBack) {
+  if (!onBack) {
     onBack = goBack;
   }
 
@@ -24,7 +24,7 @@ const Header = ({text, onBack, showLeftIcon = true}: Props) => {
       </TouchableOpacity>
       <HorizontalSpacer width={12} />
       {text && (
-        <Text style={styles.text} type={TextType.textBold}>
+        <Text style={styles.text} type={TextType.header}>
           {text}
         </Text>
       )}
