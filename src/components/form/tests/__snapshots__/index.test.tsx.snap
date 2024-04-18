@@ -1,0 +1,685 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form renders correctly 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#E30B0B",
+            "flex": 1,
+            "height": 12,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "width": 8,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "backgroundColor": "#ABABAB",
+            "flex": 1,
+            "height": 12,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "width": 8,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "backgroundColor": "#ABABAB",
+            "flex": 1,
+            "height": 12,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "width": 8,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "backgroundColor": "#ABABAB",
+            "flex": 1,
+            "height": 12,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <RCTScrollView
+        bounces={false}
+        data={
+          [
+            {
+              "label": "Nome",
+              "name": "name",
+              "required": true,
+              "step": 0,
+              "text": "Digite seu nome",
+              "title": "Nome",
+              "type": "text",
+            },
+            {
+              "label": "Email",
+              "name": "email",
+              "required": true,
+              "step": 1,
+              "text": "Digite seu email",
+              "title": "Email",
+              "type": "email",
+            },
+            {
+              "label": "Senha",
+              "name": "password",
+              "required": true,
+              "step": 2,
+              "text": "Digite sua senha",
+              "title": "Senha",
+              "type": "password",
+            },
+            {
+              "label": "Confirmar senha",
+              "name": "confirmPassword",
+              "required": true,
+              "step": 3,
+              "text": "Confirme sua senha",
+              "title": "Confirmar senha",
+              "type": "password",
+            },
+          ]
+        }
+        decelerationRate="fast"
+        getItem={[Function]}
+        getItemCount={[Function]}
+        horizontal={true}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        pagingEnabled={true}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEnabled={false}
+        scrollEventThrottle={0.0001}
+        showsHorizontalScrollIndicator={false}
+        stickyHeaderIndices={[]}
+        viewabilityConfigCallbackPairs={[]}
+      >
+        <View>
+          <View
+            onFocusCapture={[Function]}
+            onLayout={[Function]}
+            style={
+              [
+                {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "width": 702,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "height": 40,
+                  }
+                }
+              />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#121212",
+                      "fontSize": 24,
+                      "fontWeight": "bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Nome
+              </Text>
+              <View
+                style={
+                  {
+                    "height": 16,
+                  }
+                }
+              />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#222222",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Digite seu nome
+              </Text>
+              <View
+                style={
+                  {
+                    "height": 16,
+                  }
+                }
+              />
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "#222222",
+                        "fontSize": 14,
+                        "fontWeight": "normal",
+                      },
+                      {
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                >
+                  Nome
+                </Text>
+                <View
+                  style={
+                    {
+                      "height": 8,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderColor": "#595959",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "height": 62,
+                      "paddingHorizontal": 10,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <TextInput
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    style={
+                      {
+                        "flex": 1,
+                      }
+                    }
+                    value=""
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            onFocusCapture={[Function]}
+            onLayout={[Function]}
+            style={
+              [
+                {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "width": 702,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "height": 40,
+                  }
+                }
+              />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#121212",
+                      "fontSize": 24,
+                      "fontWeight": "bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Email
+              </Text>
+              <View
+                style={
+                  {
+                    "height": 16,
+                  }
+                }
+              />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#222222",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Digite seu email
+              </Text>
+              <View
+                style={
+                  {
+                    "height": 16,
+                  }
+                }
+              />
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "#222222",
+                        "fontSize": 14,
+                        "fontWeight": "normal",
+                      },
+                      {
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                >
+                  Email
+                </Text>
+                <View
+                  style={
+                    {
+                      "height": 8,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderColor": "#595959",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "height": 62,
+                      "paddingHorizontal": 10,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <TextInput
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    style={
+                      {
+                        "flex": 1,
+                      }
+                    }
+                    value=""
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            onFocusCapture={[Function]}
+            onLayout={[Function]}
+            style={
+              [
+                {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "width": 702,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "height": 40,
+                  }
+                }
+              />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#121212",
+                      "fontSize": 24,
+                      "fontWeight": "bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Senha
+              </Text>
+              <View
+                style={
+                  {
+                    "height": 16,
+                  }
+                }
+              />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#222222",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Digite sua senha
+              </Text>
+              <View
+                style={
+                  {
+                    "height": 16,
+                  }
+                }
+              />
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "#222222",
+                        "fontSize": 14,
+                        "fontWeight": "normal",
+                      },
+                      {
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                >
+                  Senha
+                </Text>
+                <View
+                  style={
+                    {
+                      "height": 8,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderColor": "#595959",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "height": 62,
+                      "paddingHorizontal": 10,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <TextInput
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    style={
+                      {
+                        "flex": 1,
+                      }
+                    }
+                    value=""
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            onFocusCapture={[Function]}
+            onLayout={[Function]}
+            style={
+              [
+                {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "width": 702,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "height": 40,
+                  }
+                }
+              />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#121212",
+                      "fontSize": 24,
+                      "fontWeight": "bold",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Confirmar senha
+              </Text>
+              <View
+                style={
+                  {
+                    "height": 16,
+                  }
+                }
+              />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#222222",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Confirme sua senha
+              </Text>
+              <View
+                style={
+                  {
+                    "height": 16,
+                  }
+                }
+              />
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "#222222",
+                        "fontSize": 14,
+                        "fontWeight": "normal",
+                      },
+                      {
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                >
+                  Confirmar senha
+                </Text>
+                <View
+                  style={
+                    {
+                      "height": 8,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderColor": "#595959",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "flexDirection": "row",
+                      "height": 62,
+                      "paddingHorizontal": 10,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <TextInput
+                    onBlur={[Function]}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    style={
+                      {
+                        "flex": 1,
+                      }
+                    }
+                    value=""
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;

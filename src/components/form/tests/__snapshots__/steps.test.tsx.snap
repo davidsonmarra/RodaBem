@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Steps renders correctly 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#E30B0B",
+        "flex": 1,
+        "height": 12,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "backgroundColor": "#ABABAB",
+        "flex": 1,
+        "height": 12,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "backgroundColor": "#ABABAB",
+        "flex": 1,
+        "height": 12,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "width": 8,
+      }
+    }
+  />
+</View>
+`;

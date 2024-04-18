@@ -9,7 +9,8 @@
       "@assets": ["./src/assets"],
       "@components": ["./src/components"],
       "@navigation": ["./src/navigation"],
-      "@theme": ["./src/configs/theme"]
+      "@theme": ["./src/configs/theme"],
+      "@mocks": ["./__mocks__"],
     }
   },
 }
