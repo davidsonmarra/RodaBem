@@ -1,0 +1,369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignInContainer should render correctly 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#F1F1F1",
+      "flex": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        [
+          {
+            "color": "#121212",
+            "fontSize": 24,
+            "fontWeight": "bold",
+          },
+          undefined,
+        ]
+      }
+    >
+      Logo
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#222222",
+            "fontSize": 16,
+            "fontWeight": "normal",
+          },
+          undefined,
+        ]
+      }
+    >
+      Entre na sua conta
+    </Text>
+    <View
+      style={
+        {
+          "height": 24,
+        }
+      }
+    />
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#222222",
+              "fontSize": 14,
+              "fontWeight": "normal",
+            },
+            {
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        E-mail
+      </Text>
+      <View
+        style={
+          {
+            "height": 8,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "borderColor": "#595959",
+            "borderRadius": 10,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "height": 62,
+            "paddingHorizontal": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="none"
+          keyboardType="email-address"
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="Digite seu e-mail"
+          style={
+            {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "height": 16,
+        }
+      }
+    />
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#222222",
+              "fontSize": 14,
+              "fontWeight": "normal",
+            },
+            {
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        Senha
+      </Text>
+      <View
+        style={
+          {
+            "height": 8,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "borderColor": "#595959",
+            "borderRadius": 10,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "height": 62,
+            "paddingHorizontal": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="none"
+          autoCorrect={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="Digite sua senha de acesso"
+          secureTextEntry={true}
+          style={
+            {
+              "flex": 1,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "height": 24,
+        }
+      }
+    />
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+          "width": "auto",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#E30B0B",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "padding": 8,
+            },
+            undefined,
+          ]
+        }
+      >
+        Esqueci a senha
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#E30B0B",
+          "borderRadius": 12,
+          "justifyContent": "space-between",
+          "opacity": 1,
+          "padding": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "padding": 8,
+            },
+            undefined,
+          ]
+        }
+      >
+        Entrar
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderRadius": 12,
+          "justifyContent": "space-between",
+          "opacity": 1,
+          "padding": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#E30B0B",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "padding": 8,
+            },
+            undefined,
+          ]
+        }
+      >
+        Cadastrar
+      </Text>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;

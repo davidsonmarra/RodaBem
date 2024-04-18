@@ -17,9 +17,16 @@ interface Props {
   onSubmit: () => void;
   errors: FieldErrors<FormData>;
   clearErrors: UseFormClearErrors<any>;
+  onSignUp: () => void;
 }
 
-const SignInContainer = ({control, onSubmit, errors, clearErrors}: Props) => {
+const SignInContainer = ({
+  control,
+  onSubmit,
+  errors,
+  clearErrors,
+  onSignUp,
+}: Props) => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
@@ -63,7 +70,11 @@ const SignInContainer = ({control, onSubmit, errors, clearErrors}: Props) => {
           text="Entrar"
           type={ButtonType.primary}
         />
-        <Button text="Cadastrar" type={ButtonType.secondary} />
+        <Button
+          onPress={onSignUp}
+          text="Cadastrar"
+          type={ButtonType.secondary}
+        />
       </View>
     </SafeAreaView>
   );

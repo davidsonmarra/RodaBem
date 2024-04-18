@@ -2,7 +2,7 @@ import React from 'react';
 import {act, create} from 'react-test-renderer';
 import SignInScreen from '..';
 import SignInContainer from '../ui';
-import {Input} from '@components';
+import {Button, Input} from '@components';
 
 const mockHandleSubmit = jest.fn();
 const mockClearErrors = jest.fn();
@@ -17,8 +17,13 @@ jest.mock('react-hook-form', () => ({
   }),
 }));
 
-const getContainerInstance = ({}) => {
-  const instance = create(<SignInScreen />);
+const mockNavigate = jest.fn();
+const mockNavigation = {
+  navigate: mockNavigate,
+};
+
+const getContainerInstance = ({props}: any) => {
+  const instance = create(<SignInScreen {...props} />);
   return instance.root.findByType(SignInContainer);
 };
 
@@ -45,5 +50,18 @@ describe('SignInScreen', () => {
     expect(mockClearErrors).toHaveBeenCalledWith('email');
     expect(mockClearErrors).toHaveBeenCalledWith('password');
     expect(mockClearErrors).toHaveBeenCalledTimes(2);
+  });
+
+  it('should navigate to SignUp when the button is pressed', async () => {
+    const container = getContainerInstance({
+      props: {navigation: mockNavigation},
+    });
+    const buttonInstance = container.findAllByType(Button);
+
+    await act(async () => {
+      await buttonInstance[2].props.onPress();
+    });
+
+    expect(mockNavigate).toHaveBeenCalledWith('SignUp');
   });
 });

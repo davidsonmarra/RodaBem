@@ -1,12 +1,14 @@
 import React from 'react';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
+import {RootStackParamList} from '@navigation';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import SignInContainer from './ui';
 import schema, {FormData} from './scheme';
 
-interface Props {}
+type Props = NativeStackScreenProps<RootStackParamList, 'SignIn'>;
 
-const SignInScreen = ({}: Props) => {
+const SignInScreen = ({navigation}: Props) => {
   const {
     control,
     formState: {errors},
@@ -31,6 +33,7 @@ const SignInScreen = ({}: Props) => {
       onSubmit={onSubmit}
       errors={errors}
       clearErrors={clearErrors}
+      onSignUp={() => navigation.navigate('SignUp')}
     />
   );
 };
