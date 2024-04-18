@@ -2,7 +2,7 @@ import React from 'react';
 import {create} from 'react-test-renderer';
 import Button, {ButtonType, Props as ButtonProps} from '..';
 import {TouchableOpacity} from 'react-native';
-import styles from '../styles';
+import getStyles from '../styles';
 
 type Props = Partial<ButtonProps> & {type?: string};
 
@@ -45,6 +45,18 @@ describe('Button', () => {
   it('renders primary style correctly when does not have prop type', () => {
     const instance = createComponent({type: undefined}).root;
     const touchable = instance.findByType(TouchableOpacity);
-    expect(touchable.props.style).toEqual([styles.container, styles.primary]);
+    expect(touchable.props.style).toEqual([
+      getStyles({isDisabled: false}).container,
+      getStyles({isDisabled: false}).primary,
+    ]);
+  });
+
+  it('renders disabled style correctly when isDisabled prop is true', () => {
+    const instance = createComponent({isDisabled: true}).root;
+    const touchable = instance.findByType(TouchableOpacity);
+    expect(touchable.props.style).toEqual([
+      getStyles({isDisabled: true}).container,
+      getStyles({isDisabled: true}).primary,
+    ]);
   });
 });
