@@ -1,7 +1,12 @@
 import React from 'react';
-import {TouchableOpacity, TouchableOpacityProps} from 'react-native';
+import {
+  ActivityIndicator,
+  TouchableOpacity,
+  TouchableOpacityProps,
+} from 'react-native';
 import getStyles from './styles';
 import Text, {TextType} from '../text';
+import {colors} from '@theme';
 
 export enum ButtonType {
   primary = 'primary',
@@ -11,6 +16,7 @@ export enum ButtonType {
 export interface Props extends TouchableOpacityProps {
   text: string;
   type?: ButtonType;
+  isLoading?: boolean;
   isDisabled?: boolean;
 }
 
@@ -28,6 +34,7 @@ const buttonProps = (isDisabled: boolean) => ({
 const Button = ({
   text,
   type = ButtonType.primary,
+  isLoading = false,
   isDisabled = false,
   ...rest
 }: Props) => {
@@ -40,7 +47,11 @@ const Button = ({
         rest.style,
       ]}
       {...rest}>
-      <Text type={buttonProps(isDisabled)[type].textType}>{text}</Text>
+      {isLoading ? (
+        <ActivityIndicator size={38} color={colors.buttonText} />
+      ) : (
+        <Text type={buttonProps(isDisabled)[type].textType}>{text}</Text>
+      )}
     </TouchableOpacity>
   );
 };

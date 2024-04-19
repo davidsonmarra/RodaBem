@@ -1,7 +1,7 @@
 import React from 'react';
 import {create} from 'react-test-renderer';
 import Button, {ButtonType, Props as ButtonProps} from '..';
-import {TouchableOpacity} from 'react-native';
+import {ActivityIndicator, TouchableOpacity} from 'react-native';
 import getStyles from '../styles';
 
 type Props = Partial<ButtonProps> & {type?: string};
@@ -58,5 +58,11 @@ describe('Button', () => {
       getStyles({isDisabled: true}).container,
       getStyles({isDisabled: true}).primary,
     ]);
+  });
+
+  it('renders loading correctly', () => {
+    const instance = createComponent({isLoading: true}).root;
+    const activityIndicator = instance.findByType(ActivityIndicator);
+    expect(activityIndicator).toBeTruthy();
   });
 });

@@ -12,6 +12,8 @@ const ButtonMeta: Meta<typeof Button> = {
   args: {
     text: 'Button Primary',
     type: ButtonType.primary,
+    isLoading: false,
+    isDisabled: false,
   },
   decorators: [
     Story => (
@@ -25,6 +27,18 @@ const ButtonMeta: Meta<typeof Button> = {
 export default ButtonMeta;
 
 export const Primary: StoryObj<typeof Button> = {};
+
+export const Disabled: StoryObj<typeof Button> = {
+  args: {
+    isDisabled: true,
+  },
+};
+
+export const PrimaryWithLoading: StoryObj<typeof Button> = {
+  args: {
+    isLoading: true,
+  },
+};
 
 export const Secondary: StoryObj<typeof Button> = {
   args: {
