@@ -28,6 +28,10 @@ const getContainerInstance = ({props}: any) => {
 };
 
 describe('SignInScreen', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
   it('should call onSubmit when the form is submitted', async () => {
     const container = getContainerInstance({});
 
