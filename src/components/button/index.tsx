@@ -40,7 +40,7 @@ const Button = ({
 }: Props) => {
   return (
     <TouchableOpacity
-      disabled={isDisabled}
+      disabled={isDisabled || isLoading}
       style={[
         getStyles({isDisabled}).container,
         buttonProps(isDisabled)[type].buttonStyle,
