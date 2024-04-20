@@ -1,9 +1,9 @@
 import React, {useRef, useState} from 'react';
 import SignUpContainer from './ui';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {RootStackParamList} from '@navigation';
 import {useForm} from 'react-hook-form';
 import {FlatList} from 'react-native';
+import {RootStackParamList} from 'src/feature/login/navigation';
 import {signUpDataForm as data} from 'src/feature/login/utils';
 import {useFormScroll} from '../../hooks';
 import {FormDataRegister} from './scheme';

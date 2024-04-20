@@ -1,8 +1,8 @@
 import React from 'react';
 import {useForm} from 'react-hook-form';
-import {zodResolver} from '@hookform/resolvers/zod';
-import {RootStackParamList} from '@navigation';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {zodResolver} from '@hookform/resolvers/zod';
+import {RootStackParamList} from 'src/feature/login/navigation';
 import SignInContainer from './ui';
 import schema, {FormData} from './scheme';
 
