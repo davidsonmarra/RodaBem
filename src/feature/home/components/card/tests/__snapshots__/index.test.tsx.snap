@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "#E5E5E5",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "opacity": 1,
+      "paddingHorizontal": 12,
+      "paddingVertical": 16,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#222222",
+            "fontSize": 16,
+            "fontWeight": "normal",
+          },
+          undefined,
+        ]
+      }
+    >
+      Name
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#222222",
+            "fontSize": 16,
+            "fontWeight": "normal",
+          },
+          undefined,
+        ]
+      }
+    >
+      Brand
+    </Text>
+    <View
+      style={
+        {
+          "height": 12,
+        }
+      }
+    />
+    <Text
+      style={
+        [
+          {
+            "color": "#222222",
+            "fontSize": 16,
+            "fontWeight": "normal",
+          },
+          undefined,
+        ]
+      }
+    >
+      100 Km rodados
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "marginLeft": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#121212",
+            "fontSize": 24,
+            "fontWeight": "bold",
+          },
+          undefined,
+        ]
+      }
+    >
+      100 Km/L
+    </Text>
+  </View>
+</View>
+`;

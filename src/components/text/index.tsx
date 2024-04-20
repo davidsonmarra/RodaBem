@@ -14,7 +14,6 @@ export enum TextType {
 }
 
 interface Props extends TextProps {
-  children: string;
   type: TextType;
 }
 
