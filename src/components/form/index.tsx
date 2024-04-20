@@ -1,22 +1,12 @@
 import {Input, Text, TextType, VerticalSpacer} from '@components';
 import React, {useEffect} from 'react';
 import {FlatList, View} from 'react-native';
+import {ZodError, ZodIssue} from 'zod';
+import schema from 'src/feature/login/screens/sign-up/scheme';
+import {DataProps} from 'src/feature/login/utils';
 import getStyles from './styles';
 import Steps from './steps';
 import {Control, FieldValues, useForm, useWatch} from 'react-hook-form';
-import schema from 'src/feature/login/screens/sign-up/scheme';
-import {ZodError, ZodIssue} from 'zod';
-
-interface DataProps {
-  step: number;
-  title: string;
-  text: string;
-  name: string;
-  type: string;
-  placeholder?: string;
-  label?: string;
-  required: boolean;
-}
 
 export interface Props {
   data: DataProps[];
@@ -65,7 +55,7 @@ const Form = ({data, control, listRef, currentStep, setIsDisabled}: Props) => {
         setIsDisabled(false);
       } catch (error) {
         if (error instanceof ZodError) {
-          verifyIfErrorAtCurrentStep(error.errors, data[currentStep].name)
+          verifyIfErrorAtCurrentStep(error.errors, data[currentStep]?.name)
             ? setIsDisabled(true)
             : setIsDisabled(false);
         }
