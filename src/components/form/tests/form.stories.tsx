@@ -1,10 +1,10 @@
 import React from 'react';
+import {StyleSheet} from 'react-native';
 import type {Meta, StoryObj} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {StorybookView} from '@components';
-import Form from '..';
 import {signUpFormData} from '@mocks';
-import {StyleSheet} from 'react-native';
+import Form from '..';
 
 const FormMeta: Meta<typeof Form> = {
   title: 'Components/Form',

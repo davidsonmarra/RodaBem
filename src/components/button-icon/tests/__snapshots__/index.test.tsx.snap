@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#E30B0B",
+      "borderRadius": 43,
+      "height": 72,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 72,
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight="56"
+    bbWidth="56"
+    fill="#FFFFFF"
+    focusable={false}
+    height="56"
+    meetOrSlice={0}
+    minX={0}
+    minY={-960}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 56,
+          "width": 56,
+        },
+      ]
+    }
+    vbHeight={960}
+    vbWidth={960}
+    width="56"
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4294967295,
+          "type": 0,
+        }
+      }
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGPath
+        d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240z"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
