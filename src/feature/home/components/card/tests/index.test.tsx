@@ -1,6 +1,7 @@
 import React from 'react';
-import {create} from 'react-test-renderer';
+import {act, create} from 'react-test-renderer';
 import Card from '..';
+import {TouchableOpacity} from 'react-native';
 
 const mockData = {
   name: 'Name',
@@ -9,8 +10,8 @@ const mockData = {
   kmPerLiter: '10',
 };
 
-const createComponent = ({data = mockData, ...rest}) =>
-  create(<Card data={data} {...rest} />);
+const createComponent = ({data = mockData, onPress = jest.fn(), ...rest}) =>
+  create(<Card onPress={onPress} data={data} {...rest} />);
 
 describe('Card', () => {
   it('renders correctly', () => {
@@ -45,7 +46,12 @@ describe('Card', () => {
   it('should call onPress when press card', () => {
     const onPress = jest.fn();
     const component = createComponent({onPress}).root;
-    component.props.onPress();
-    expect(onPress).toHaveBeenCalledTimes(1);
+    const buton = component.findByType(TouchableOpacity);
+
+    act(() => {
+      buton.props.onPress();
+    });
+
+    expect(onPress).toHaveBeenNthCalledWith(1, mockData);
   });
 });

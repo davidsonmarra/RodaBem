@@ -1,12 +1,12 @@
 import React from 'react';
 import type {Meta, StoryObj} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
-import SignUpScreen from '..';
 import {signUpDataForm} from 'src/feature/login/utils';
+import SignUpContainer from '..';
 
-const SignUpScreenMeta: Meta<typeof SignUpScreen> = {
-  title: 'Screens/SignUp',
-  component: SignUpScreen,
+const SignUpContainerMeta: Meta<typeof SignUpContainer> = {
+  title: 'Screens/Login/SignUp',
+  component: SignUpContainer,
   decorators: [Story => <Story />],
   args: {
     data: signUpDataForm,
@@ -16,23 +16,23 @@ const SignUpScreenMeta: Meta<typeof SignUpScreen> = {
   },
 };
 
-export default SignUpScreenMeta;
+export default SignUpContainerMeta;
 
-export const Step1: StoryObj<typeof SignUpScreen> = {};
+export const Step1: StoryObj<typeof SignUpContainer> = {};
 
-export const Step2: StoryObj<typeof SignUpScreen> = {
+export const Step2: StoryObj<typeof SignUpContainer> = {
   args: {
     currentStep: 1,
   },
 };
 
-export const Step3: StoryObj<typeof SignUpScreen> = {
+export const Step3: StoryObj<typeof SignUpContainer> = {
   args: {
     currentStep: 2,
   },
 };
 
-export const Step4: StoryObj<typeof SignUpScreen> = {
+export const Step4: StoryObj<typeof SignUpContainer> = {
   args: {
     currentStep: 3,
   },

@@ -1,11 +1,11 @@
 import React from 'react';
 import type {Meta, StoryObj} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
-import SignInScreen from '..';
+import SignInContainer from '..';
 
-const SignInScreenMeta: Meta<typeof SignInScreen> = {
-  title: 'Screens/SignIn',
-  component: SignInScreen,
+const SignInContainerMeta: Meta<typeof SignInContainer> = {
+  title: 'Screens/Login/SignIn',
+  component: SignInContainer,
   decorators: [Story => <Story />],
   args: {
     onSubmit: action('onSubmit'),
@@ -14,6 +14,6 @@ const SignInScreenMeta: Meta<typeof SignInScreen> = {
   },
 };
 
-export default SignInScreenMeta;
+export default SignInContainerMeta;
 
-export const Default: StoryObj<typeof SignInScreen> = {};
+export const Default: StoryObj<typeof SignInContainer> = {};

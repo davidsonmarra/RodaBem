@@ -4,6 +4,7 @@ import {Text, TextType, VerticalSpacer} from '@components';
 import styles from './styles';
 
 interface Props extends TouchableOpacityProps {
+  onPress: (data: any) => void;
   data: {
     name: string;
     brand: string;
@@ -14,7 +15,7 @@ interface Props extends TouchableOpacityProps {
 
 const Card = ({data, onPress}: Props) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.container}>
+    <TouchableOpacity onPress={() => onPress(data)} style={styles.container}>
       <View style={styles.leftContent}>
         <Text type={TextType.title}>{data.name}</Text>
         <Text type={TextType.text}>{data.brand}</Text>
