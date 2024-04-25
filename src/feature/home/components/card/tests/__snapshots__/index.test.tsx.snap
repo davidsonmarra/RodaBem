@@ -32,6 +32,7 @@ exports[`Card renders correctly 1`] = `
   style={
     {
       "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
       "borderColor": "#E5E5E5",
       "borderRadius": 8,
       "borderWidth": 1,
@@ -54,9 +55,9 @@ exports[`Card renders correctly 1`] = `
       style={
         [
           {
-            "color": "#222222",
-            "fontSize": 16,
-            "fontWeight": "normal",
+            "color": "#121212",
+            "fontSize": 24,
+            "fontWeight": "bold",
           },
           undefined,
         ]

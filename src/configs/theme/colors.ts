@@ -6,6 +6,8 @@ export default {
   text: '#222222',
   buttonText: '#FFFFFF',
   border: '#595959',
+  borderLight: '#E5E5E5',
   error: '#e3330b',
   stepIncomplete: '#ABABAB',
+  cardBackground: '#FFFFFF',
 };

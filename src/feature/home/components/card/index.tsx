@@ -16,7 +16,7 @@ const Card = ({data, onPress}: Props) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
       <View style={styles.leftContent}>
-        <Text type={TextType.text}>{data.name}</Text>
+        <Text type={TextType.title}>{data.name}</Text>
         <Text type={TextType.text}>{data.brand}</Text>
         <VerticalSpacer height={12} />
         {data.kmDriven && (

@@ -34,20 +34,20 @@ exports[`Button renders correctly 1`] = `
       "alignItems": "center",
       "backgroundColor": "#E30B0B",
       "borderRadius": 43,
-      "height": 72,
+      "height": 64,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 72,
+      "width": 64,
     }
   }
 >
   <RNSVGSvgView
     align="xMidYMid"
-    bbHeight="56"
-    bbWidth="56"
+    bbHeight="48"
+    bbWidth="48"
     fill="#FFFFFF"
     focusable={false}
-    height="56"
+    height="48"
     meetOrSlice={0}
     minX={0}
     minY={-960}
@@ -59,14 +59,14 @@ exports[`Button renders correctly 1`] = `
         },
         {
           "flex": 0,
-          "height": 56,
-          "width": 56,
+          "height": 48,
+          "width": 48,
         },
       ]
     }
     vbHeight={960}
     vbWidth={960}
-    width="56"
+    width="48"
   >
     <RNSVGGroup
       fill={

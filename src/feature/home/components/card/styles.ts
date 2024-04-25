@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {colors} from '@theme';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,8 +9,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderColor: '#E5E5E5',
+    borderColor: colors.borderLight,
     borderWidth: 1,
+    backgroundColor: colors.cardBackground,
   },
   leftContent: {
     flex: 1,
